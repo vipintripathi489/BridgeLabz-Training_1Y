@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class ArraySum
+{
+    public static void main(String args[])
+    {
+        Scanner a = new Scanner(System.in);
+        double[] arr1 = new double[10];
+        double b = 0.0;
+        int c = 0;
+
+        while (true)
+        {
+            double d = a.nextDouble();
+
+            if (d <= 0)
+                break;
+
+            if (c == 10)
+                break;
+
+            arr1[c] = d;
+            c++;
+        }
+
+        for (int e = 0; e < c; e++)
+        {
+            System.out.println(arr1[e]);
+            b = b + arr1[e];
+        }
+
+        System.out.println(b);
+    }
+}
